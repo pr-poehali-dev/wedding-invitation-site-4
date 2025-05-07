@@ -11,10 +11,32 @@ const Index = () => {
     <div className="min-h-screen bg-[#FFF5E1] py-16 px-4 flex flex-col items-center">
       {/* Заголовок */}
       <div className="text-center mb-12 animate-fade-in">
-        <h1 className="text-4xl md:text-6xl font-bold text-[#E9967A] mb-4">Михаил & Елизавета</h1>
+        <div className="relative mb-8">
+          <svg className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-96 h-44 text-[#E9967A]/20" viewBox="0 0 100 50">
+            <path d="M10,25 C10,15 30,5 50,25 C70,5 90,15 90,25 C90,35 70,45 50,25 C30,45 10,35 10,25 Z" fill="currentColor" />
+          </svg>
+          <h1 className="font-vibes text-5xl md:text-7xl text-[#E9967A] mb-4 relative">
+            <span className="inline-block transform hover:scale-110 transition-transform duration-300">М</span>
+            <span className="inline-block transform hover:rotate-12 transition-transform duration-300">и</span>
+            <span className="inline-block transform hover:scale-110 transition-transform duration-300">х</span>
+            <span className="inline-block transform hover:scale-105 transition-transform duration-300">а</span>
+            <span className="inline-block transform hover:rotate-6 transition-transform duration-300">и</span>
+            <span className="inline-block transform hover:scale-110 transition-transform duration-300">л</span>
+            <span className="mx-4 inline-block">&</span>
+            <span className="inline-block transform hover:scale-110 transition-transform duration-300">Е</span>
+            <span className="inline-block transform hover:rotate-12 transition-transform duration-300">л</span>
+            <span className="inline-block transform hover:scale-110 transition-transform duration-300">и</span>
+            <span className="inline-block transform hover:scale-105 transition-transform duration-300">з</span>
+            <span className="inline-block transform hover:rotate-6 transition-transform duration-300">а</span>
+            <span className="inline-block transform hover:scale-110 transition-transform duration-300">в</span>
+            <span className="inline-block transform hover:scale-105 transition-transform duration-300">е</span>
+            <span className="inline-block transform hover:rotate-6 transition-transform duration-300">т</span>
+            <span className="inline-block transform hover:scale-110 transition-transform duration-300">а</span>
+          </h1>
+        </div>
         <p className="text-xl md:text-2xl text-[#8B6D5A] italic">приглашают вас на свою свадьбу</p>
         <div className="flex justify-center mt-4">
-          <Separator className="w-20 bg-[#FADCD0]" />
+          <div className="w-40 h-2 bg-gradient-to-r from-transparent via-[#FADCD0] to-transparent rounded-full"></div>
         </div>
       </div>
 
