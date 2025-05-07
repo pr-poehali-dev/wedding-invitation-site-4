@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -24,7 +23,7 @@ const Index = () => {
         <CardContent className="p-8 text-center">
           <div className="mb-8">
             <h2 className="text-2xl md:text-3xl font-semibold text-[#E9967A] mb-2">Дата и время</h2>
-            <p className="text-lg md:text-xl text-[#8B6D5A]">25 августа 2025</p>
+            <p className="text-lg md:text-xl text-[#8B6D5A]">5 сентября 2025</p>
           </div>
 
           <div className="mb-8">
