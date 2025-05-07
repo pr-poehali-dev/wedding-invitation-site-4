@@ -9,12 +9,38 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-[#FFF5E1] py-16 px-4 flex flex-col items-center">
-      {/* Заголовок */}
+      {/* Заголовок с вензельными инициалами */}
       <div className="text-center mb-12 animate-fade-in">
         <div className="relative mb-8">
-          <svg className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-96 h-44 text-[#E9967A]/20" viewBox="0 0 100 50">
-            <path d="M10,25 C10,15 30,5 50,25 C70,5 90,15 90,25 C90,35 70,45 50,25 C30,45 10,35 10,25 Z" fill="currentColor" />
-          </svg>
+          {/* Красивый вензель из инициалов М и Е */}
+          <div className="flex justify-center mb-6">
+            <div className="relative w-48 h-48 md:w-64 md:h-64">
+              <svg className="w-full h-full" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                {/* Декоративная окружность */}
+                <circle cx="100" cy="100" r="95" stroke="#E9967A" strokeWidth="2" strokeOpacity="0.3" />
+                <circle cx="100" cy="100" r="85" stroke="#E9967A" strokeWidth="1" strokeOpacity="0.2" />
+                
+                {/* Декоративные элементы */}
+                <path d="M70,40 Q100,30 130,40 Q140,70 130,100 Q100,110 70,100 Q60,70 70,40 Z" 
+                  stroke="#E9967A" fill="none" strokeWidth="1.5" />
+                
+                {/* Буква М (стилизованно) */}
+                <path d="M65,65 L65,135 M65,65 Q83,95 100,65 Q117,95 135,65 M135,65 L135,135" 
+                  stroke="#E9967A" fill="none" strokeWidth="3" />
+                
+                {/* Буква Е (стилизованно, переплетается с М) */}
+                <path d="M75,75 L115,75 M75,75 L75,125 M75,100 L105,100 M75,125 L115,125" 
+                  stroke="#E9967A" fill="none" strokeWidth="3" strokeLinecap="round" />
+                
+                {/* Декоративные завитки */}
+                <path d="M50,60 Q40,80 50,100 Q45,120 30,125" stroke="#E9967A" strokeWidth="1" fill="none" />
+                <path d="M150,60 Q160,80 150,100 Q155,120 170,125" stroke="#E9967A" strokeWidth="1" fill="none" />
+                <path d="M100,150 Q110,160 120,155 Q130,160 135,170" stroke="#E9967A" strokeWidth="1" fill="none" />
+                <path d="M100,150 Q90,160 80,155 Q70,160 65,170" stroke="#E9967A" strokeWidth="1" fill="none" />
+              </svg>
+            </div>
+          </div>
+          
           <h1 className="font-vibes text-5xl md:text-7xl text-[#E9967A] mb-4 relative">
             <span className="inline-block transform hover:scale-110 transition-transform duration-300">М</span>
             <span className="inline-block transform hover:rotate-12 transition-transform duration-300">и</span>
@@ -47,7 +73,9 @@ const Index = () => {
             <h2 className="text-2xl md:text-3xl font-semibold text-[#E9967A] mb-2">Дата и время</h2>
             <p className="text-lg md:text-xl text-[#8B6D5A]">5 сентября 2025</p>
           </div>
-
+          
+          {/* ... остальной контент остается прежним ... */}
+          
           <div className="mb-8">
             <h2 className="text-2xl md:text-3xl font-semibold text-[#E9967A] mb-2">Место проведения</h2>
             <p className="text-lg md:text-xl text-[#8B6D5A] mb-1">Ресторан "Терраса"</p>
@@ -68,7 +96,7 @@ const Index = () => {
             <div className="flex flex-col md:flex-row justify-center gap-6 md:gap-10">
               <div className="text-center p-4 bg-[#FFF5E1] rounded-lg shadow-sm">
                 <div className="flex items-center justify-center mb-2">
-                  <Icon name="FileHeart" className="text-[#E9967A] mr-2" />
+                  <Icon name="File="FileHeart" className="text-[#E9967A] mr-2" />
                   <span className="font-medium text-[#8B6D5A]">14:00</span>
                 </div>
                 <p className="text-[#8B6D5A]">Торжественная регистрация</p>
